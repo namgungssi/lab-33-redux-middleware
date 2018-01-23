@@ -1,0 +1,13 @@
+#kanban {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-right: 1em;
+  margin-left: 1em;
+  flex-wrap: wrap;
+}
+
+div.categoryItem {
+  display: flex;
+}

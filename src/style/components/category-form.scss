@@ -1,0 +1,86 @@
+#formDefault {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    @include box-basic;
+    background: white;
+  }
+}
+
+
+div#categoryForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#categoryName {
+  width: $category-name-width;
+}
+
+
+#budgetAmt {
+  width: $budget-amt-width;
+}
+
+
+input {
+  border-radius: 1px;
+  margin-right: .1em;
+  border: 2px;
+  color: black;
+  font-size: .4em;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#categorySubmitButton {
+  display: block;
+  margin-left: 1em;
+  width: 6em;
+  height: 6em;
+  margin-right: 2em;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 10px;
+
+    &:hover{
+      color: rgb(195, 93, 138);
+    }
+}
+
+
+input.inactive {
+  background: white;
+  color: black;
+  border: 2px gray;
+
+    &:focus {
+      outline: none;
+    }
+}
+
+
+#categorySubmitButton.hidden {
+  display: none;
+  visibility: hidden;
+
+  &:hover, &:focus {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.invisible {
+  display: none;
+}

@@ -1,0 +1,23 @@
+#categoryHeader {
+  display: flex;
+  flex-direction: row;
+  background: none;
+}
+
+
+a#deleteButton {
+  text-decoration: none;
+  color: rgb(195, 93, 138);
+  padding: .1em;
+  margin-right: 2em;
+  padding-top: .2em;
+
+    &:hover {
+      color: rgb(161, 60, 60);
+    }
+}
+
+
+div.category-item {
+  margin-bottom: .5em;
+}
