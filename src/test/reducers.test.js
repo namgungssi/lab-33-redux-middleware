@@ -26,7 +26,7 @@ describe('Reducer tests', () => {
 
 		test('update a category', () => {
 
-			let newCategory = {name: 'Groceries', budget: '300' };
+			let newCategory = {name: 'shopping', budget: '300' };
 
 				state = categoryReducer(state, {
 				type: 'CATEGORY_UPDATE',
